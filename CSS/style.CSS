@@ -24,13 +24,14 @@ body {
 }
 
 #head .container>div {
+    /*
     border: 2px solid red;
-    
+    */
 }
 
 #head .container h3 {
     text-transform: uppercase;
-    color:var(--skyblue);
+    color:var(--green);
     letter-spacing: 1px;
 }
 #head .logo img {
@@ -65,7 +66,7 @@ body {
     left: 0;
     width: 0;
     height: 3px;
-    background-color: var(--green);
+    background-color: var(--skyblue);
     transition: width 0.3s ease;
 }
 .homepage a:hover::after,
@@ -80,7 +81,7 @@ body {
 .destination a,
 .activity a,
 .book_a_trip a {
-    color: var(--skyblue);
+    color: var(--green);
     text-decoration: none;
     padding: 10px;
 }
@@ -89,7 +90,7 @@ body {
 .destination a:hover,
 .activity a:hover,
 .book_a_trip a:hover {
-    color: var(--green);
+    color: var(--skyblue);
 }
 /*------------------------*/
 /*seach box*/
@@ -112,15 +113,20 @@ body {
             color: white;
 }
 .search_box .fa-solid {
-    color: var(--skyblue);
+    color: var(--green);
 }
 .search_box .fa-solid:hover{
-            color: var(--green);
+            color: var(--skyblue);
             cursor: pointer;
 }
 
 /*-----------------------*/
-
+/* footer*/
+#footer .container {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
 
 /* =============dat bien========== */
 :root {
@@ -133,6 +139,14 @@ body {
     --green:rgb(0, 187, 0)
 }
 /*----------------------------*/
+
+
+
+/* phan chan */
+#footer {
+    background-color: var(--green);
+}
+
 
 
 /*===============hieu ung==============*/
@@ -192,23 +206,6 @@ body {
 @keyframes glow {
     0% {
         filter: drop-shadow(0 0 5px #38bdf8)
-                drop-shadow(0 0 10px #38bdf8)
-                drop-shadow(0 0 20px #38bdf8);
-    }
-    50% {
-        filter: drop-shadow(0 0 10px #38bdf8)
-                drop-shadow(0 0 20px #38bdf8)
-                drop-shadow(0 0 30px #38bdf8);
-    }
-    100% {
-        filter: drop-shadow(0 0 5px #38bdf8)
-                drop-shadow(0 0 10px #38bdf8)
-                drop-shadow(0 0 20px #38bdf8);
-    }
-}
-@keyframes glowgreen {
-    0% {
-        filter: drop-shadow(0 0 5px rgb(0, 187, 0))
                 drop-shadow(0 0 10px rgb(0, 187, 0))
                 drop-shadow(0 0 20px rgb(0, 187, 0));
     }
@@ -221,5 +218,22 @@ body {
         filter: drop-shadow(0 0 5px rgb(0, 187, 0))
                 drop-shadow(0 0 10px rgb(0, 187, 0))
                 drop-shadow(0 0 20px rgb(0, 187, 0));
+    }
+}
+@keyframes glowgreen {
+    0% {
+        filter: drop-shadow(0 0 5px #38bdf8)
+                drop-shadow(0 0 10px #38bdf8)
+                drop-shadow(0 0 20px #38bdf8);
+    }
+    50% {
+        filter: drop-shadow(0 0 10px #38bdf8)
+                drop-shadow(0 0 20px #38bdf8)
+                drop-shadow(0 0 30px #38bdf8);
+    }
+    100% {
+        filter: drop-shadow(0 0 5px #38bdf8)
+                drop-shadow(0 0 10px #38bdf8)
+                drop-shadow(0 0 20px #38bdf8);
     }
 }
