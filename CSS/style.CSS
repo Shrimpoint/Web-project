@@ -138,7 +138,8 @@ body {
 /*===============hieu ung==============*/
 /* hieu ung */
 #head .logo img:hover {
-    animation: rotate 1s;
+    animation: rotate 1s,glowgreen 6s infinite alternate;
+    transform-origin: center;
 }
 
 .container div a:hover {
@@ -148,7 +149,7 @@ body {
     animation: changecolor 1s;
 }
 #head .logo img {
-    animation: 1s, glow 1.5s infinite alternate;
+    animation: glow 6s infinite alternate;
     transform-origin: center;
 }
 /*-----------------------------*/
@@ -203,5 +204,22 @@ body {
         filter: drop-shadow(0 0 5px #38bdf8)
                 drop-shadow(0 0 10px #38bdf8)
                 drop-shadow(0 0 20px #38bdf8);
+    }
+}
+@keyframes glowgreen {
+    0% {
+        filter: drop-shadow(0 0 5px rgb(0, 187, 0))
+                drop-shadow(0 0 10px rgb(0, 187, 0))
+                drop-shadow(0 0 20px rgb(0, 187, 0));
+    }
+    50% {
+        filter: drop-shadow(0 0 10px rgb(0, 187, 0))
+                drop-shadow(0 0 20px rgb(0, 187, 0))
+                drop-shadow(0 0 30px rgb(0, 187, 0));
+    }
+    100% {
+        filter: drop-shadow(0 0 5px rgb(0, 187, 0))
+                drop-shadow(0 0 10px rgb(0, 187, 0))
+                drop-shadow(0 0 20px rgb(0, 187, 0));
     }
 }
