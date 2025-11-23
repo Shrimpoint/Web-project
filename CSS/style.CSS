@@ -33,6 +33,9 @@ body {
     color:var(--skyblue);
     letter-spacing: 1px;
 }
+#head .logo img {
+    border-radius: 50%;
+}
 /* animated menu */
 .homepage a,
 .destination a,
@@ -144,6 +147,10 @@ body {
 .container .search_box:hover{
     animation: changecolor 1s;
 }
+#head .logo img {
+    animation: 1s, glow 1.5s infinite alternate;
+    transform-origin: center;
+}
 /*-----------------------------*/
 
 /* keyframe */
@@ -180,4 +187,21 @@ body {
     100%{
         filter: none;
     } 
+}
+@keyframes glow {
+    0% {
+        filter: drop-shadow(0 0 5px #38bdf8)
+                drop-shadow(0 0 10px #38bdf8)
+                drop-shadow(0 0 20px #38bdf8);
+    }
+    50% {
+        filter: drop-shadow(0 0 10px #38bdf8)
+                drop-shadow(0 0 20px #38bdf8)
+                drop-shadow(0 0 30px #38bdf8);
+    }
+    100% {
+        filter: drop-shadow(0 0 5px #38bdf8)
+                drop-shadow(0 0 10px #38bdf8)
+                drop-shadow(0 0 20px #38bdf8);
+    }
 }
