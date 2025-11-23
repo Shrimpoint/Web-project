@@ -1,31 +1,100 @@
 body {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 /* phan dau web */
 #head {
     position: sticky;
     z-index: 999; 
     top: 0;
+    background-image: url(/images/adventure_pic.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0,5);
+    background-blend-mode: overlay;
+    background-color: var(--dark);
 }
 #head .container {
     display:flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #0f172a;
     padding: 10px;
     flex-direction: row;
 }
 
 #head .container>div {
     border: 2px solid red;
+    
+}
+
+#head .container h3 {
+    text-transform: uppercase;
+    color:var(--skyblue);
+    letter-spacing: 1px;
+}
+/* animated menu */
+.homepage a,
+.destination a,
+.activity a,
+.book_a_trip a{
+    display: flex;
+    gap: 30px;
+}
+.homepage a,
+.destination a,
+.activity a,
+.book_a_trip a {
+    position: relative;
+    color: #eee;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 0;
+    transition: 0.5s ease;
+}
+.homepage a::after,
+.destination a::after,
+.activity a::after,
+.book_a_trip a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--green);
+    transition: width 0.3s ease;
+}
+.homepage a:hover::after,
+.destination a:hover::after,
+.activity a:hover::after,
+.book_a_trip a:hover::after {
+    width: 100%;
+}
+ /*         */
+.homepage a,
+.destination a,
+.activity a,
+.book_a_trip a {
+    color: var(--skyblue);
+    text-decoration: none;
     padding: 10px;
 }
 
-#head .container h4 {
-    text-transform: uppercase;
-    color:#38bdf8;
-    letter-spacing: 1px;
+.homepage a:hover,
+.destination a:hover,
+.activity a:hover,
+.book_a_trip a:hover {
+    color: var(--green);
 }
-
-
 /*     */
+/* dat bien */
+:root {
+    --skyblue:#38bdf8
+}
+:root {
+    --dark:#0f172a
+}
+:root {
+    --green:rgb(0, 187, 0)
+}
