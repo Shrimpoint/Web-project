@@ -75,8 +75,7 @@ body {
 .book_a_trip a:hover::after {
     width: 100%;
 }
- /*------------------------------*/
-/* hover noi bat*/
+
  .homepage a,
 .destination a,
 .activity a,
@@ -130,12 +129,17 @@ body {
     background-blend-mode: multiply;
     background-position: center;
     background-repeat: no-repeat;
+
 }
 
-#footer .container {
+#footer>.container {
     display: flex;
     align-content: center;
     justify-content: space-between;
+    padding-left:10px ;
+    padding-right:10px ;
+    padding-bottom:10px ;
+    flex: 1;
 }
 #footer .container div h3,#footer .container div div h3 {
     color: var(--white);
@@ -165,22 +169,90 @@ div div a i {
     color: white;
     font-weight: 550;
 }
+#footer .container2{
+    padding-left:10px ;
+    padding-right:10px ;
+}
 #footer .container2 p {
     color: var(--yellow);
     line-height: 1.2;
 }
 #footer h1 {
     color: var(--yellow);
+
 }
 #footer .oath {
+    display: flex;
     margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0),rgb(26, 77, 21)),
+    url(/images/fansipan.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+}
+.oath h1 {
+    max-width: 60%;
     text-align: justify;
     line-height: 1.5;
-    max-width: 750px;
     text-shadow: 2px 2px 2px;
-    border: 1px solid red;
 }
 
+.container2 {
+    display: flex;
+}
+.container2 .item {
+    width: 50%;
+}
+.divide {
+    border: none;
+    border-bottom: 1px solid var(--skyblue);
+}
+/* animated footer*/
+#footer .container div a,
+#footer .container div div a,
+.contact td a{
+    position: relative;
+    transition: 0.5s ease;
+    text-decoration: none;
+    padding: 5px 0;
+}
+#footer .container div a:hover,
+#footer .container div div a:hover,
+.contact td a:hover{
+    color: var(--skyblue);
+}
+#footer .container div a::after,
+#footer .container div div a::after,
+.contact td a::after{
+    content: "";
+    position: absolute;
+    transition: width 0.3s ease;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    background-color: var(--skyblue);
+    height: 3px;
+}
+#footer .container div a:hover::after,
+#footer .container div div a:hover::after,
+.contact td a:hover::after{
+    width: 100%;
+}
+.false {
+    text-decoration:line-through;
+}
+#footer .container .khampha>div,
+#footer .container .goriventure>div,
+#footer .container .tour,
+#footer .container .thongtin>div{
+    display: flex;
+    flex-direction: column;
+    
+}
 
 /* =============dat bien========== */
 :root {
