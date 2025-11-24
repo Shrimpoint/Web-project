@@ -220,6 +220,9 @@ div div a i {
     text-decoration: none;
     padding: 5px 0;
 }
+.contact td a{
+    margin-left: 30px;
+}
 #footer .container div a:hover,
 #footer .container div div a:hover,
 .contact td a:hover{
@@ -252,6 +255,30 @@ div div a i {
     display: flex;
     flex-direction: column;
     
+}
+.container2 .item2 {
+    width: 50%;
+    float: right;
+    display: flex;
+    justify-content:flex-end;
+    flex-wrap: wrap;
+}
+.container2 .item2 .nganhang {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: flex-end;
+}
+.nganhang>div{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.nganhang div img {
+    border-radius: 10px;
+}
+.credit {
+    text-align: right;
+    width: 100%;
 }
 
 /* =============dat bien========== */
