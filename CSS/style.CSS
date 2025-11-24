@@ -23,12 +23,6 @@ body {
     flex-direction: row;
 }
 
-#head .container>div {
-    /*
-    border: 2px solid red;
-    */
-}
-
 #head .container h3 {
     text-transform: uppercase;
     color:var(--green);
@@ -120,6 +114,61 @@ body {
 }
 
 /*-----------------------*/
+/*===================body==================*/
+.banner {
+    position: relative;
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+}
+
+.banner_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner_text {
+    position: absolute;
+    top: 20%;      
+    left: 48%;     
+    transform: translate(-50%, -50%);
+    color: var(--yellow);
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#body .container {
+    display: flex;
+    align-items: center;
+    background-color: var(--greencyan);
+}
+#body .container .item {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10%;
+}
+#body .container .item2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+#body .container .item .title,
+#body .container .item .bussi {
+
+}
+#body .container .item .text {
+    line-height: 1.5;
+    text-align: justify;
+}
+
+
+
+
 /* ============footer============*/
 
 #footer {
@@ -296,6 +345,9 @@ div div a i {
 }
 :root {
     --white:rgb(230, 230, 230)
+}
+:root {
+    --greencyan:rgb(205, 255, 215)
 }
 /*----------------------------*/
 
