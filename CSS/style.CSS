@@ -161,6 +161,27 @@ div div a i {
     font-weight: 550;
     color: rgb(214, 214, 46);
 }
+#footer .container2 div p span{
+    color: white;
+    font-weight: 550;
+}
+#footer .container2 p {
+    color: var(--yellow);
+    line-height: 1.2;
+}
+#footer h1 {
+    color: var(--yellow);
+}
+#footer .oath {
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.5;
+    max-width: 750px;
+    text-shadow: 2px 2px 2px;
+    border: 1px solid red;
+}
+
+
 /* =============dat bien========== */
 :root {
     --skyblue:#38bdf8
