@@ -121,13 +121,46 @@ body {
 }
 
 /*-----------------------*/
-/* footer*/
+/* ============footer============*/
+
+#footer {
+    background-color: var(--green);
+    background-image: url(/images/green_background.jfif),
+    linear-gradient(rgb(214, 255, 154), rgb(139, 182, 76));
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 #footer .container {
     display: flex;
     align-content: center;
     justify-content: space-between;
 }
-
+#footer .container div h3,#footer .container div div h3 {
+    color: var(--white);
+    font-weight: bolder;
+}
+#footer .container div a {
+    color: var(--yellow);
+    text-decoration: none;
+    font-weight: 550;
+    font-size: 16px;
+}
+div div a i {
+    font-size: 30px;
+}
+.contact i {
+    font-size: 20px;
+    color: white;
+}
+.contact a,.contact p {
+    padding-left: 30px;
+    text-decoration: none;
+    color: var(--yellow);
+    font-weight: 550;
+    color: rgb(214, 214, 46);
+}
 /* =============dat bien========== */
 :root {
     --skyblue:#38bdf8
@@ -136,16 +169,18 @@ body {
     --dark:#0f172a
 }
 :root {
-    --green:rgb(0, 187, 0)
+    --green:rgb(5, 170, 0)
+}
+:root {
+    --yellow:rgb(214, 214, 46)
+}
+:root {
+    --white:rgb(230, 230, 230)
 }
 /*----------------------------*/
 
 
 
-/* phan chan */
-#footer {
-    background-color: var(--green);
-}
 
 
 
@@ -205,35 +240,35 @@ body {
 }
 @keyframes glow {
     0% {
-        filter: drop-shadow(0 0 5px #38bdf8)
-                drop-shadow(0 0 10px rgb(0, 187, 0))
-                drop-shadow(0 0 20px rgb(0, 187, 0));
+        filter: drop-shadow(0 0 5px var(--green))
+                drop-shadow(0 0 10px var(--green))
+                drop-shadow(0 0 20px var(--green));
     }
     50% {
-        filter: drop-shadow(0 0 10px rgb(0, 187, 0))
-                drop-shadow(0 0 20px rgb(0, 187, 0))
-                drop-shadow(0 0 30px rgb(0, 187, 0));
+        filter: drop-shadow(0 0 10px var(--green))
+                drop-shadow(0 0 20px var(--green))
+                drop-shadow(0 0 30px var(--green));
     }
     100% {
-        filter: drop-shadow(0 0 5px rgb(0, 187, 0))
-                drop-shadow(0 0 10px rgb(0, 187, 0))
-                drop-shadow(0 0 20px rgb(0, 187, 0));
+        filter: drop-shadow(0 0 5px var(--green))
+                drop-shadow(0 0 10px var(--green))
+                drop-shadow(0 0 20px var(--green));
     }
 }
 @keyframes glowgreen {
     0% {
-        filter: drop-shadow(0 0 5px #38bdf8)
-                drop-shadow(0 0 10px #38bdf8)
-                drop-shadow(0 0 20px #38bdf8);
+        filter: drop-shadow(0 0 5px var(--skyblue))
+                drop-shadow(0 0 10px var(--skyblue))
+                drop-shadow(0 0 20px var(--skyblue));
     }
     50% {
-        filter: drop-shadow(0 0 10px #38bdf8)
-                drop-shadow(0 0 20px #38bdf8)
-                drop-shadow(0 0 30px #38bdf8);
+        filter: drop-shadow(0 0 10px var(--skyblue))
+                drop-shadow(0 0 20px var(--skyblue))
+                drop-shadow(0 0 30px var(--skyblue));
     }
     100% {
-        filter: drop-shadow(0 0 5px #38bdf8)
-                drop-shadow(0 0 10px #38bdf8)
-                drop-shadow(0 0 20px #38bdf8);
+        filter: drop-shadow(0 0 5px var(--skyblue))
+                drop-shadow(0 0 10px var(--skyblue))
+                drop-shadow(0 0 20px var(--skyblue));
     }
 }
