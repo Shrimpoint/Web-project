@@ -192,9 +192,24 @@ body {
     text-shadow: 1px 1px 2px black;
     z-index: 3;
 }
-
-
-
+#body .container2 {
+    overflow: hidden;
+    width: 100%;
+    background-color: var(--camogreen);
+    background-image: url(/images/false_green.jpg);
+    padding: 20px 0;
+}
+.logo_moving {
+    display: flex;
+    animation: scroll-right 20s linear infinite;
+    white-space: nowrap;
+    width: 200%;
+}
+.logo_moving img {
+    height: 80px;
+    margin: 0 40px;
+    border-radius: 10px;
+}
 
 /* ============footer============*/
 
@@ -379,6 +394,9 @@ div div a i {
 :root {
     --purple:#3b2e5e
 }
+:root {
+    --camogreen:#83a04f
+}
 /*----------------------------*/
 
 
@@ -472,5 +490,13 @@ div div a i {
         filter: drop-shadow(0 0 5px var(--skyblue))
                 drop-shadow(0 0 10px var(--skyblue))
                 drop-shadow(0 0 20px var(--skyblue));
+    }
+}
+@keyframes scroll-right {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%); 
     }
 }
