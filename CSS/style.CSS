@@ -500,3 +500,119 @@ div div a i {
         transform: translateX(-50%); 
     }
 }
+/*=====================responsive=========== */
+/* Dành cho màn hình nhỏ hơn 1024px (Tablet & Mobile) */
+@media screen and (max-width: 1024px) {
+    #head .container {
+        flex-direction: column; 
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    #head .container > div {
+        margin-bottom: 15px; 
+    }
+    .homepage a, 
+    .destination a, 
+    .activity a, 
+    .book_a_trip a {
+        justify-content: center;
+        font-size: 16px;
+    }
+    .search_box {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .search_box input {
+        width: 100%;
+    }
+    .banner {
+        height: auto;
+        min-height: 250px;
+    }
+    .banner_text {
+        width: 90%;
+        font-size: 14px; 
+    }
+    .banner_text h1 {
+        font-size: 24px;
+    }
+    #body .container {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    #body .container .item, 
+    #body .container .item2 {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    #body .container .item {
+        order: 2;
+    }
+    
+    #body .container .item2 {
+        order: 1;
+        margin-bottom: 30px;
+    }
+
+    #body .container .item2 img {
+        width: 100%;
+        height: auto;
+    }
+    #body .container .item .title {
+        font-size: 32px;
+        text-align: center;
+    }
+    
+    #body .container .item .bussi {
+        font-size: 20px;
+        text-align: center;
+    }
+    #footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    #footer .container > div {
+        margin-bottom: 30px;
+        width: 100%;
+        align-items: center;
+    }
+    .oath h1 {
+        max-width: 90%; 
+        font-size: 18px;
+    }
+    .container2 {
+        flex-direction: column;
+    }
+    .container2 .item, 
+    .container2 .item2 {
+        width: 100%;
+        float: none;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact {
+        margin: 0 auto;
+    }
+    .credit {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .nganhang {
+        justify-content: center;
+        margin-top: 15px;
+    }
+}
+
+/* Dành cho màn hình rất nhỏ (Điện thoại đứng - dưới 480px) */
+@media screen and (max-width: 480px) {
+    #head .logo img {
+        width: 60px;
+    }
+    .banner_text {
+        top: 50%;
+    }
+}
